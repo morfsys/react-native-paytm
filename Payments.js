@@ -22,7 +22,7 @@ export default class PaymentsScreen extends React.Component {
 
         return (
             <WebView
-                source={{uri: paymentURL+'testtxn'}}            
+                source={{uri: +'http://192.168.0.100:3000/testtxn'}}            
                 injectedJavaScript = {`document.getElementById("ORDER_ID").value = "${ORDER_ID}";document.getElementById("CUST_ID").value = "${CUST_ID}";document.getElementById("TXN_AMOUNT").value = "${TXN_AMOUNT}";document.f1.submit();`}
                 onNavigationStateChange = {(data) => this.handleResponse(data)}
             />
