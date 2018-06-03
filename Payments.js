@@ -19,6 +19,8 @@ export default class PaymentsScreen extends React.Component {
     }
 
     render() {
+        
+        let { ORDER_ID, CUST_ID, TXN_AMOUNT } = this.state;
 
         return (
             <WebView
